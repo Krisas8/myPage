@@ -1,0 +1,166 @@
+@import "../../global.scss";
+
+.intro {
+  height: calc(100vh-60px);
+  background-color: #e9e6e6;
+
+  .introContainer {
+    height: 100%;
+    width: 100vw;
+    display: flex;
+
+    .left {
+      flex: 0.7;
+      background-color: #4831d4;
+      display: flex;
+      align-items: center;
+      justify-content: flex-start;
+
+      margin-top: 0;
+      padding: 0;
+
+      @media only screen and (min-width: 1800px) {
+        flex: 0.65;
+      }
+
+      @media only screen and (max-width: 1000px) {
+        flex: 1;
+      }
+
+      .textBox {
+        width: 70%;
+        display: flex;
+        justify-content: center;
+        align-items: flex-end;
+        flex-direction: column;
+        margin-left: 10%;
+        height: 90%;
+        // margin-bottom: 10%;
+
+        @media only screen and (max-width: 500px) {
+          width: 80%;
+        }
+        .title {
+          height: 60px;
+          font-size: 40px;
+          font-weight: 800;
+          color: #ccf381;
+          opacity: 1;
+          @media only screen and (max-width: 560px) {
+            font-size: 2rem;
+
+            @media only screen and (max-width: 445px) {
+              font-size: 1.5rem;
+            }
+          }
+        }
+        .introDescription {
+          width: 100%;
+          height: auto;
+          text-align: justify;
+          margin-top: 3%;
+
+          font-size: 20px;
+          color: white;
+          letter-spacing: 0.3rem;
+          line-height: 1.6rem;
+          @media only screen and (max-width: 560px) {
+            letter-spacing: 0.1rem;
+            margin-top: 1px;
+            @media only screen and (max-width: 380px) {
+              letter-spacing: 0rem;
+              font-size: 15px;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .right {
+    flex: 0.4;
+    background-color: $mainColor;
+    z-index: 0;
+    overflow: visible;
+    display: block;
+    position: relative;
+    display: flex;
+    align-items: center;
+
+    @media only screen and (max-width: 850px) {
+      display: none;
+    }
+
+    .picture {
+      display: flex;
+      align-items: center;
+      overflow-x: visible;
+      margin-left: -100px;
+      .eins {
+        position: relative;
+        width: 350px;
+        height: 400px;
+        transform: rotate(10deg);
+        background: url("./intro_pic_brighter.png");
+        background-size: cover;
+        background-repeat: no-repeat;
+        z-index: 1;
+        overflow-x: visible;
+
+        @media only screen and (max-width: 1200px) {
+          width: calc(350px / 1.5);
+          height: calc(400px / 1.5);
+        }
+        @media only screen and (max-width: 1000px) {
+          width: 150px;
+          height: 200px;
+        }
+      }
+      .zwei {
+        position: absolute;
+        width: 344px;
+        height: 394px;
+        z-index: 0;
+        left: -50px;
+        margin-top: 90px;
+        transform: rotate(10deg);
+        background-color: transparent;
+        border: 4px solid rgba(204, 243, 129, 1);
+        overflow-x: visible;
+        animation: frame-spin infinite 10s linear;
+
+        @media only screen and (max-width: 1200px) {
+          width: calc(344px / 1.5);
+          height: calc(394px / 1.5);
+          @media only screen and (max-width: 1000px) {
+            width: 150px;
+            height: 200px;
+            left: -70px;
+            margin-top: 50px;
+          }
+        }
+        @media only screen and (max-width: 850px) {
+          display: none;
+        }
+      }
+      @keyframes frame-spin {
+        0% {
+          transform: rotate(10deg);
+        }
+        25% {
+          transform: rotate(190deg);
+        }
+        60% {
+          transform: rotate(190deg);
+        }
+        80% {
+          transform: rotate(10deg);
+        }
+      }
+
+      @media only screen and (min-width: 1800px) {
+        flex: 0.35;
+      }
+    }
+  }
+}

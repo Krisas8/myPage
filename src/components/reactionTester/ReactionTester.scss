@@ -1,0 +1,22 @@
+.reactionTester {
+  width: 100vw;
+  height: calc(100vh-60px);
+  background-color: rgb(155, 151, 151);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 35px;
+}
+
+.underConstruction {
+  width: 700px;
+  height: 460px;
+  border-radius: 5%;
+  opacity: 0.7;
+  box-shadow: 14px 18px 8px 4px gray;
+
+  @media only screen and (max-width: 750px) {
+    width: 400px;
+    height: 280px;
+  }
+}

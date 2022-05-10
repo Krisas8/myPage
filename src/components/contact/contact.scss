@@ -1,0 +1,61 @@
+@import "../../global.scss";
+
+.contact {
+  background-color: $mainColor;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  .innerContent {
+    display: flex;
+    flex-direction: column;
+    width: 80vw;
+    height: 60%;
+    color: rgba(25, 212, 41, 0.8);
+    text-decoration: none;
+
+    .footerMain {
+      height: 50%;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-evenly;
+      font-size: 15px;
+      font-weight: 700;
+      border-bottom: 1px solid white;
+    }
+    .contactMe {
+      text-transform: uppercase;
+      font-size: 25px;
+      font-weight: 700;
+    }
+    .contactUl {
+      padding: 0;
+      margin: 0;
+      color: inherit;
+      font-size: 18px;
+      text-decoration: none;
+      li {
+        margin-top: 15px;
+      }
+      .linkedInLogo {
+        font-size: 30px;
+      }
+      .linkedSpan:hover {
+        color: white;
+      }
+      a {
+        text-decoration: none;
+        color: inherit;
+        text-decoration: none;
+      }
+    }
+    .footerBottom {
+      margin-top: 50px;
+      font-size: 18px;
+      font-weight: 700;
+      display: flex;
+      flex-direction: column;
+      width: 60vw;
+    }
+  }
+}

@@ -1,0 +1,64 @@
+@import "../../global.scss";
+
+.menu {
+  width: 480px;
+  height: 55px;
+  background-color: rgba(161, 159, 161, 0.87);
+  position: fixed;
+  right: 85px;
+  top: 4px;
+  z-index: 4;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px;
+  transition: 0.8s ease;
+  font-size: 18px;
+  @media only screen and (max-width: 560px) {
+    justify-content: flex-end;
+  }
+
+  ul {
+    list-style: none;
+    text-decoration: none;
+    color: rgba(226, 219, 219, 0.87);
+    font-size: 16px;
+    @media only screen and (max-width: 420px) {
+      font-size: 14px;
+    }
+    @media only screen and (max-width: 385px) {
+      font-size: 10px;
+    }
+  }
+
+  li {
+    width: 25%;
+    margin: 0px 10px;
+    display: inline;
+    font-size: inherit;
+    color: rgba(226, 219, 219, 0.87);
+    @media only screen and (max-width: 480px) {
+      margin: 0px 4px;
+    }
+  }
+
+  li {
+    a {
+      color: rgba(226, 219, 219, 0.87);
+      text-decoration: inherit;
+      font-size: inherit;
+    }
+  }
+
+  &.active {
+    right: 85px;
+    top: 4px;
+    background-color: $mainColor;
+    z-index: 4;
+    transition: 0.8s ease;
+
+    a:hover {
+      color: #ccf381;
+    }
+  }
+}

@@ -1,0 +1,86 @@
+@import "../../global.scss";
+
+.works {
+  width: 100vw;
+  max-height: 100vh;
+  background-color: $mainColor;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+
+  @media only screen and (max-width: 1100px) {
+    display: grid;
+    width: 100%;
+  }
+
+  .worksContainer {
+    width: 100%;
+    height: 96%;
+    display: flex;
+    justify-content: center;
+
+    flex-direction: column;
+    @media only screen and (max-width: 1100px) {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+    }
+  }
+
+  .projectDescriptionAbove {
+    width: 75%;
+    max-height: 100%;
+    display: flex;
+    align-items: flex-start;
+    flex-direction: row;
+    justify-content: space-between;
+    overflow-x: visible;
+    margin-bottom: 12px;
+    @media only screen and (max-width: 1100px) {
+      //old version
+      width: 75%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      margin-bottom: 15px;
+    }
+  }
+
+  .projectDescriptionBelow {
+    width: 100%;
+    max-height: 100%;
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+    margin-top: 5px;
+
+    .placeholderDiv {
+      width: 400px;
+      margin-left: 25px;
+      @media only screen and (max-width: 1800px) {
+        margin-left: 0;
+      }
+      @media only screen and (max-width: 1600px) {
+        width: 200px;
+      }
+      @media only screen and (max-width: 1200px) {
+        width: 50px;
+      }
+    }
+    @media only screen and (max-width: 1150px) {
+      justify-content: center;
+    }
+
+    @media only screen and (max-width: 1100px) {
+      width: 75%;
+      display: flex;
+      align-items: center;
+      flex-direction: column;
+      justify-content: center;
+      margin-bottom: 15px;
+      margin-left: 0;
+    }
+  }
+}

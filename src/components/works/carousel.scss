@@ -1,0 +1,86 @@
+.carousel {
+  display: flex;
+  justify-content: center;
+  margin-right: 0;
+  margin-left: 2px;
+}
+
+.carousel.slide {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 230px;
+  color: rgba(204, 243, 129, 1);
+  border-radius: 10px;
+
+  .carousel-control-prev {
+    width: 36px;
+    text-overflow: ellipsis;
+    padding-left: 3px;
+  }
+
+  .carousel-control-prev-icon {
+    width: 12px;
+    height: 12px;
+    color: rgba(204, 243, 129, 1);
+  }
+  .carousel-inner {
+    height: 230px;
+  }
+
+  .carousel-caption {
+    // width: 70%;
+    height: 40px;
+    top: -4px;
+    margin-bottom: 5px;
+
+    h3 {
+      margin-right: 0;
+      padding-top: 2px;
+      padding-bottom: 5px;
+      height: 32px;
+      font-size: 12px;
+      font-weight: 700;
+      margin-bottom: 0px;
+    }
+    padding: 0;
+  }
+  .visually-hidden {
+    font-size: 12px;
+  }
+  .carousel-control-next {
+    width: 50px;
+    text-overflow: ellipsis;
+  }
+  .carousel-control-next-icon {
+    width: 8px;
+    height: 10px;
+    padding-right: 1px;
+    color: rgba(204, 243, 129, 1);
+  }
+
+  .carousel-indicators {
+    display: none;
+  }
+
+  img {
+    margin-top: 15px;
+    width: 250px;
+    height: 222px;
+    border-radius: 10px;
+  }
+
+  a {
+    color: rgba(204, 243, 129, 1);
+    span {
+      color: rgba(204, 243, 129, 1);
+    }
+  }
+  div {
+    color: gray;
+  }
+}
+
+.span.carousel-next-icon {
+  color: rgba(204, 243, 129, 1);
+}
